@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM MANIPULATION</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="page_banner">
+                <h1 class="title">BooksbyCozy</h1>
+                <p>Books for NInjas</p>
+                <p id="demo"></p>
+                <form id="search_books">
+                    <input type="text" placeholder="Search books..">
+                </form>
+            </div>
+        </header>
+        <div id="book-list">
+            <div class="sub-title">
+                <h2 class="title"> Books to Read</h2>
+                <div class="check">
+                    <label for="hide all books">Hide All Books</label>
+                    <input type="checkbox" id="hide">
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <span class="name">Name of the Wind</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">The Wise Man's Fear</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">Kafka on the Shore</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">Master Of The Margarita</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">Can I tell you a Story</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">Can I tell you</span>
+                    <span class="delete">delete</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <form id="add-book">
+        <input type="text"placeholder="Add a book...">
+        <button id="addbtn">Add</button>
+    </form>
+    <div id="tabbed-content">
+        <ul class="tabs">
+            <li data-target="#about">About</li>
+            <li data-target="#contact">Contact</li>
+        </ul>
+        <div class="panel active" id="about">
+            <p>Content for about tab...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugiat ad quia veniam veritatis repellendus hic dolores, rem et dicta odit architecto officiis quas dolore voluptates consectetur ratione laudantium necessitatibus.</p>
+        </div>
+        <div class="panel" id="contact">
+            <p>Content for contact tab...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugiat ad quia veniam veritatis repellendus hic dolores, rem et dicta odit architecto officiis quas dolore voluptates consectetur ratione laudantium necessitatibus.</p>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

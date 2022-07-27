@@ -1,0 +1,121 @@
+h1,h2{
+    font-weight: normal;
+}
+#wrapper{
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    /* overflow: hidden; */
+    border: 1px solid lightgray;
+}
+#demo{
+    max-width: 280px;
+    font-size: 20px;
+    font-style: italic;
+    /* border: 1px solid red ; */
+    padding: 0.5rem;
+}
+#page_banner{
+    background: #eee;
+    padding: 10px 0;
+}
+#page_banner h1,#page_banner p{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+#page_banner input{
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #444;
+    outline-style:none ;
+}
+.sub-title{
+    max-width: 900px;
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+#book-list,#add-book,#tabbed-content{
+    margin: 30px;
+}
+#book-list ul, #tabbed-content ul{
+    list-style: none;
+    padding: 0;
+}
+#book-list li{
+    padding: 20px;
+    border-left: 5px solid #ddd;
+    margin: 20px 10px ;
+}
+#book-list li:hover{
+    border-color: #9361bf;
+}
+.delete{
+   float: right;
+   background: #9361bf;
+   padding: 6px;
+   border-radius: 4px;
+   color: #eee;
+   cursor: pointer;
+}
+
+#add-book{
+    max-width: 500px;
+    padding-bottom: 10px;
+    margin: auto;
+    display: grid;
+    place-items:center;
+    /* border: 1px solid red; */
+}
+#add-book input{
+    width: 80%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #444;
+    outline-style:none ;
+    /* border: 1px solid red; */
+}
+#add-book button{
+    width:20%;
+    background: #9361bf;
+    padding: 6px;
+    border-radius: 4px;
+    color: #eee;
+    cursor: pointer;
+    border-style:none ;
+}
+#tabbed-content li {
+    display: inline-block;
+    padding: 10px 14px;
+    background: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right:10px ;
+}
+#tabbed-content .panel{
+    display: none;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+#tabbed-content .panel.active{
+    display: block;
+}
